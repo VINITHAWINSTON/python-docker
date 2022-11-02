@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ica
+spec:
+  containers:
+    - name: 75ff6bc89623
+      image: index.docker.io/vinithawinston/pythonhello:latest
+      imagePullPolicy: Always
+  imagePullSecrets:
+    - name: myregistrykey
